@@ -66,7 +66,7 @@ export const ClientsList = ({ data }: ClientsListProps) => {
                 
                 <div className="flex items-center gap-1 text-cyber-magenta">
                   <DollarSign className="h-4 w-4" />
-                  <span>${client.price.toLocaleString()}</span>
+                  <span>₹{client.price.toLocaleString()}</span>
                 </div>
               </div>
               
