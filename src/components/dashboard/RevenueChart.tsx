@@ -30,7 +30,7 @@ export const RevenueChart = ({ data }: RevenueChartProps) => {
         <div className="glass-card p-4 border border-cyber-cyan/50">
           <p className="text-cyber-cyan font-medium">{`Status: ${label}`}</p>
           <p className="text-foreground">
-            Revenue: <span className="text-cyber-cyan">${payload[0].value.toLocaleString()}</span>
+            Revenue: <span className="text-cyber-cyan">₹{payload[0].value.toLocaleString()}</span>
           </p>
           <p className="text-muted-foreground text-sm">
             {payload[0].payload.count} projects
@@ -64,7 +64,7 @@ export const RevenueChart = ({ data }: RevenueChartProps) => {
             <YAxis 
               stroke="hsl(var(--muted-foreground))"
               fontSize={12}
-              tickFormatter={(value) => `$${value.toLocaleString()}`}
+              tickFormatter={(value) => `₹${value.toLocaleString()}`}
             />
             <Tooltip content={<CustomTooltip />} />
             <Area

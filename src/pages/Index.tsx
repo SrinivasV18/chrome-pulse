@@ -68,7 +68,7 @@ const Index = () => {
         
         <MetricCard
           title="Total Revenue"
-          value={`$${totalRevenue.toLocaleString()}`}
+          value={`₹${totalRevenue.toLocaleString()}`}
           change="+15%"
           changeType="positive"
           icon={DollarSign}
@@ -79,7 +79,7 @@ const Index = () => {
         
         <MetricCard
           title="Avg Project Value"
-          value={`$${avgProjectValue.toFixed(0)}`}
+          value={`₹${avgProjectValue.toFixed(0)}`}
           change="+3%"
           changeType="positive"
           icon={TrendingUp}
